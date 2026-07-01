@@ -23,6 +23,47 @@
       This page requires JavaScript to display.
     </div>
   </noscript>
+<style id="mobile-responsive">
+@media (max-width: 768px) {
+
+  /* === HERO === */
+  [data-screen-label="Hero"] { flex-direction:column !important; min-height:auto !important; }
+  [data-screen-label="Hero"] > div:first-child { width:100% !important; padding:48px 20px 40px !important; }
+  [data-screen-label="Hero"] h1 { font-size:clamp(2rem,8vw,3rem) !important; }
+  [data-screen-label="Hero"] > div:last-child { width:100% !important; padding:24px 20px 32px !important; min-height:200px; justify-content:center !important; }
+  [data-screen-label="Hero"] > div:last-child img { height:auto !important; max-width:72% !important; transform:none !important; display:block; margin:0 auto; }
+
+  /* === РџР РћР“Р РђРњРњРђ === */
+  [data-screen-label="Программа"] { flex-direction:column !important; }
+  [data-screen-label="Программа"] > div:first-child { width:100% !important; padding:40px 20px !important; }
+  [data-screen-label="Программа"] h2 { font-size:clamp(2rem,10vw,3.5rem) !important; line-height:1.1 !important; }
+
+  /* === Р”РќР 1-5 === */
+  [data-screen-label^="День"] { flex-direction:column !important; min-height:auto !important; }
+  [data-screen-label^="День"] > div:first-child { width:100% !important; padding:48px 20px !important; }
+  [data-screen-label^="День"] > div:nth-child(2) { width:100% !important; min-height:220px; padding:20px !important; }
+  [data-screen-label^="День"] img { max-width:100% !important; width:100% !important; height:auto !important; object-fit:contain !important; }
+
+  /* === Р¤РРќРђР› === */
+  [data-screen-label="Финал"] > div:first-child { max-width:100% !important; padding:40px 20px !important; }
+
+  /* === РђР РЎР•РќРђР› === */
+  [data-screen-label="Арсенал"] > div:not(:first-child) { padding-left:20px !important; padding-right:20px !important; max-width:100% !important; }
+  [data-screen-label="Арсенал"] h2 { font-size:clamp(2rem,9vw,3rem) !important; }
+
+  /* === РљРћРњРђРќР”Рђ === */
+  [data-screen-label="Команда"] > div:not(:first-child) { padding-left:20px !important; padding-right:20px !important; max-width:100% !important; }
+  [data-screen-label="Команда"] h2 { font-size:clamp(2rem,9vw,3rem) !important; }
+  [data-screen-label="Команда"] > div > div[style*="display:flex"][style*="gap:30px"] { flex-wrap:wrap !important; }
+
+  /* === CTA BUTTONS === */
+  .cta-register { display:block !important; width:100% !important; text-align:center !important; padding:16px 20px !important; box-sizing:border-box !important; }
+
+  /* === STEPS & CONTACTS === */
+  /* font-size already >=15px, text-align:center already set -- no changes needed */
+
+}
+</style>
 </head>
 <body>
   <div id="__bundler_thumbnail">
